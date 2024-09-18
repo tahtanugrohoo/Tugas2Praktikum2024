@@ -11,11 +11,26 @@ JELASKAN PROSES PASSING DATA DARI FORM MENUJU TAMPILAN DENGAN FILE `README.md`
 Buat tampilan semenarik mungkin untuk dilihat.
 
 
-Nama : ___
+Berikut adalah langkah-langkah passing data dari form ke tampilan yang telah diparafrasekan:
 
-NIM : ___
+1. **Input Data di Form (FormData):**  
+   FormData digunakan untuk menerima input dari pengguna, seperti nama, nim, dan tahun. Input ini diambil melalui `TextEditingController` yang berfungsi mengelola nilai yang dimasukkan ke dalam `TextField`.
 
-Shift Baru: ___
+2. **Mengambil Input dari Pengguna:**  
+   Di dalam form, terdapat tiga `TextField` yang masing-masing terhubung dengan controller (`_namaController`, `_nimController`, `_tahunController`) untuk menangkap input dari pengguna.
+
+3. **Mengirim Data dengan Navigator:**  
+   Ketika pengguna menekan tombol "Simpan", data yang diinput akan dikirim ke widget lain, yaitu `TampilData`, dengan menggunakan metode `Navigator.push()`. Data ini dikirimkan sebagai argumen ke konstruktor `TampilData`.
+
+4. **Menampilkan Data:**  
+   Kelas `TampilData` yang merupakan `StatelessWidget` menerima data melalui konstruktor, seperti `nama` dan `nim`. Data tersebut kemudian ditampilkan pada layar setelah dikirim.
+
+
+Nama : Tahta Setyo Nugroho
+
+NIM : H1D022066
+
+Shift Baru: E
 
 ## Screenshot
 Contoh :
