@@ -10,9 +10,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "Aplikasi Flutter Pertama",
-      home: FormData(),
+    return MaterialApp(
+      title: "Tugas 2 - Perkenalan",
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(fontFamily: 'Poppins'),
+          bodyMedium: TextStyle(fontFamily: 'Poppins'),
+        ),
+      ),
+      home: const FormData(),
     );
   }
 }
