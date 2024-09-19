@@ -17,14 +17,18 @@ class TampilData extends StatelessWidget {
     final int umur = DateTime.now().year - tahun;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Perkenalan"),
+        title:
+            const Text("Perkenalan", style: TextStyle(fontFamily: 'Poppins')),
+        backgroundColor: Colors.orange,
       ),
-      body: Container(
-        margin: const EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Text("Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun"),
-          ],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Center(
+          child: Text(
+            "Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun",
+            style: TextStyle(fontFamily: 'Poppins', fontSize: 18),
+            textAlign: TextAlign.center,
+          ),
         ),
       ),
     );
